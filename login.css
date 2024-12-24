@@ -1,0 +1,188 @@
+/* Reset osnovnog ponašanja */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Omogućavamo da header bude gore, a wrapper centriran ispod */
+body {
+  display: flex;               /* Fleks container */
+  flex-direction: column;      /* Vertikalno slaganje: header gore, .wrapper dole */
+  justify-content: center;     /* Centriranje po vertikali - wrapper će biti na sredini */
+  align-items: center;         /* Centriranje po horizontali */
+  min-height: 100vh;           /* zauzmi punu visinu ekrana */
+  
+  background: url(slika1.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+/* HEADER NA VRHU (više nije absolute) */
+.top-header {
+  margin-top: 20px; /* da ne lepi na sam vrh browsera (po želji) */
+}
+
+.header-link {
+  text-decoration: none;
+  color: #4a00e0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: rgba(255,255,255,0.7);
+  padding: 0.5em 1em;
+  border-radius: 5px;
+}
+
+.wrapper {
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(9px);
+  color: #fff;
+  border-radius: 12px;
+  padding: 30px 40px;
+}
+
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.wrapper .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+  color: #fff;
+}
+
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 30%;
+  transform: translate(-50%);
+  font-size: 20px;
+}
+
+.wrapper .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+  accent-color: #fff;
+  margin-right: 3px;
+}
+
+.remember-forgot a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.wrapper .btn {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+
+.wrapper .btn:hover {
+  background-color: #e1dace;
+  color: #fff;
+}
+
+.wrapper .register-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+
+.register-link p a,
+.wrapper .register-link a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link p a:hover,
+.wrapper .register-link a:hover {
+  text-decoration: underline;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.nav-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.nav-tabs .nav-item {
+  margin: 0 10px;
+}
+
+.nav-tabs .nav-link {
+  padding: 10px 20px;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #fff;
+  color: #333;
+}

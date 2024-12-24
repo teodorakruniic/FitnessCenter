@@ -1,0 +1,86 @@
+/* Splošni reset + pisava */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Telo strani: sredinska postavitev + ozadje */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('slika1.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Glavni prosojni okvir */
+.wrapper {
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(9px);
+  color: #fff;
+  border-radius: 12px;
+  padding: 30px 40px;
+  text-align: center;
+}
+
+/* Naslov */
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Vnosna polja (input, select) so v .input-box kontejnerju */
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  margin: 20px 0;
+}
+
+/* Izgled inputov in selectov */
+input, select {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 0 20px; /* notranji rob, da je besedilo odmaknjeno od roba */
+}
+
+/* Placeholder text (če bi ga imel) */
+input::placeholder {
+  color: #fff;
+}
+
+/* Gumb za shranjevanje */
+.btn {
+  width: 100%;
+  height: 45px;
+  background: linear-gradient(to right, #8a8381, #8a8381);
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Hover efekt na gumb */
+.btn:hover {
+  background-color: #5c5a55;
+  color: #fff;
+}
