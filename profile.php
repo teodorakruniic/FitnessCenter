@@ -89,8 +89,12 @@ try {
         <?php endif; ?>
       </ul>
     </div>
+     <!-- Dugme za preuzimanje PDF-a -->
+     <a href="generate_report.php">
+        <button class="btn-logout">Download Attendance Report</button>
+    </a>
     <button class="btn-logout" onclick="logout()">Logout</button>
-
+  
   </div>
 
   <script>

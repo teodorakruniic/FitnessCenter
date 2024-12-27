@@ -122,7 +122,7 @@ try {
       </div>
 
       <!-- Gumb za potrditev -->
-      <button type="submit" class="btn">Shrani spremembe</button>
+      <button type="submit" class="btn">Save Changes</button>
     </form>
   </div>
 
